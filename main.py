@@ -28,4 +28,5 @@ def enviar_email():
     s.sendmail(msg['From'], msg['To'], msg.as_string().encode('utf-8'))
 if  cotação < 500:
     enviar_email()
-
+else:
+    print(f'A cotação está acima, agora são {cotação} kwz')
